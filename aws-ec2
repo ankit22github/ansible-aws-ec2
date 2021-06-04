@@ -1,0 +1,14 @@
+- hosts: localhost
+
+  tasks:
+
+  - ec2_instance:
+       region: us-east-2
+       image_id: ami-09558250a3419e7d0
+       instance_type: t2.micro
+       vpc_subnet_id: subnet-245a8b4f
+       key_name: hadoopkey(ankit)
+       name: os_from_ansible
+       state: present
+       aws_access_key: AKIAWLR7QT73SBDL46DIHWIUM
+       aws_secret_key: YiiL0cPYlID1oUKKIKsefnNYfwoz2nN3l
